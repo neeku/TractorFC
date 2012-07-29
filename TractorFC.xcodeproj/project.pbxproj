@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29FA076415C51A4C009A9513 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA076315C51A4C009A9513 /* UIKit.framework */; };
+		29FA076615C51A4C009A9513 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA076515C51A4C009A9513 /* Foundation.framework */; };
+		29FA076815C51A4C009A9513 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA076715C51A4C009A9513 /* CoreGraphics.framework */; };
+		29FA076A15C51A4C009A9513 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA076915C51A4C009A9513 /* CoreData.framework */; };
+		29FA077015C51A4C009A9513 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29FA076E15C51A4C009A9513 /* InfoPlist.strings */; };
+		29FA077215C51A4C009A9513 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA077115C51A4C009A9513 /* main.m */; };
+		29FA077615C51A4C009A9513 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA077515C51A4C009A9513 /* AppDelegate.m */; };
+		29FA077915C51A4C009A9513 /* TractorFC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29FA077715C51A4C009A9513 /* TractorFC.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29FA075F15C51A4C009A9513 /* TractorFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TractorFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FA076315C51A4C009A9513 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		29FA076515C51A4C009A9513 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		29FA076715C51A4C009A9513 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29FA076915C51A4C009A9513 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29FA076D15C51A4C009A9513 /* TractorFC-Info.plist */ = {isa = PBXFileReference; path = "TractorFC-Info.plist"; sourceTree = "<group>"; };
+		29FA076F15C51A4C009A9513 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		29FA077115C51A4C009A9513 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29FA077315C51A4C009A9513 /* TractorFC-Prefix.pch */ = {isa = PBXFileReference; path = "TractorFC-Prefix.pch"; sourceTree = "<group>"; };
+		29FA077415C51A4C009A9513 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		29FA077515C51A4C009A9513 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29FA077815C51A4C009A9513 /* TractorFC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TractorFC.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29FA075C15C51A4C009A9513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FA076415C51A4C009A9513 /* UIKit.framework in Frameworks */,
+				29FA076615C51A4C009A9513 /* Foundation.framework in Frameworks */,
+				29FA076815C51A4C009A9513 /* CoreGraphics.framework in Frameworks */,
+				29FA076A15C51A4C009A9513 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29FA075415C51A4B009A9513 = {
+			isa = PBXGroup;
+			children = (
+				29FA076B15C51A4C009A9513 /* TractorFC */,
+				29FA076215C51A4C009A9513 /* Frameworks */,
+				29FA076015C51A4C009A9513 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29FA076015C51A4C009A9513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29FA075F15C51A4C009A9513 /* TractorFC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29FA076215C51A4C009A9513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29FA076315C51A4C009A9513 /* UIKit.framework */,
+				29FA076515C51A4C009A9513 /* Foundation.framework */,
+				29FA076715C51A4C009A9513 /* CoreGraphics.framework */,
+				29FA076915C51A4C009A9513 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29FA076B15C51A4C009A9513 /* TractorFC */ = {
+			isa = PBXGroup;
+			children = (
+				29FA077415C51A4C009A9513 /* AppDelegate.h */,
+				29FA077515C51A4C009A9513 /* AppDelegate.m */,
+				29FA077715C51A4C009A9513 /* TractorFC.xcdatamodeld */,
+				29FA076C15C51A4C009A9513 /* Supporting Files */,
+			);
+			path = TractorFC;
+			sourceTree = "<group>";
+		};
+		29FA076C15C51A4C009A9513 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29FA076D15C51A4C009A9513 /* TractorFC-Info.plist */,
+				29FA076E15C51A4C009A9513 /* InfoPlist.strings */,
+				29FA077115C51A4C009A9513 /* main.m */,
+				29FA077315C51A4C009A9513 /* TractorFC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29FA075E15C51A4C009A9513 /* TractorFC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29FA077C15C51A4C009A9513 /* Build configuration list for PBXNativeTarget "TractorFC" */;
+			buildPhases = (
+				29FA075B15C51A4C009A9513 /* Sources */,
+				29FA075C15C51A4C009A9513 /* Frameworks */,
+				29FA075D15C51A4C009A9513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TractorFC;
+			productName = TractorFC;
+			productReference = 29FA075F15C51A4C009A9513 /* TractorFC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29FA075615C51A4B009A9513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 29FA075915C51A4B009A9513 /* Build configuration list for PBXProject "TractorFC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29FA075415C51A4B009A9513;
+			productRefGroup = 29FA076015C51A4C009A9513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29FA075E15C51A4C009A9513 /* TractorFC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29FA075D15C51A4C009A9513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FA077015C51A4C009A9513 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29FA075B15C51A4C009A9513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FA077215C51A4C009A9513 /* main.m in Sources */,
+				29FA077615C51A4C009A9513 /* AppDelegate.m in Sources */,
+				29FA077915C51A4C009A9513 /* TractorFC.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29FA076E15C51A4C009A9513 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29FA076F15C51A4C009A9513 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29FA077A15C51A4C009A9513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		29FA077B15C51A4C009A9513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29FA077D15C51A4C009A9513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TractorFC/TractorFC-Prefix.pch";
+				INFOPLIST_FILE = "TractorFC/TractorFC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		29FA077E15C51A4C009A9513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TractorFC/TractorFC-Prefix.pch";
+				INFOPLIST_FILE = "TractorFC/TractorFC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29FA075915C51A4B009A9513 /* Build configuration list for PBXProject "TractorFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29FA077A15C51A4C009A9513 /* Debug */,
+				29FA077B15C51A4C009A9513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29FA077C15C51A4C009A9513 /* Build configuration list for PBXNativeTarget "TractorFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29FA077D15C51A4C009A9513 /* Debug */,
+				29FA077E15C51A4C009A9513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		29FA077715C51A4C009A9513 /* TractorFC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29FA077815C51A4C009A9513 /* TractorFC.xcdatamodel */,
+			);
+			currentVersion = 29FA077815C51A4C009A9513 /* TractorFC.xcdatamodel */;
+			path = TractorFC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29FA075615C51A4B009A9513 /* Project object */;
+}
