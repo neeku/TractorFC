@@ -16,7 +16,7 @@
 @property (nonatomic)                       RssData         *rssData;
 @property (nonatomic)                       NSString        *selectedItem;
 @property (strong, nonatomic)               RssParser       *rssParser;
-@property (strong, nonatomic)   IBOutlet   NATitleBar      *header;
+@property (strong, nonatomic)   IBOutlet    NATitleBar      *header;
 @property (strong, nonatomic)               UIWebView       *webView;
 @property (nonatomic)                       UIView          *footer;
 

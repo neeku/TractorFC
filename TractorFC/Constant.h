@@ -5,11 +5,9 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#ifndef Hamshahri_Tandorosti_Constant_h
-#define Hamshahri_Tandorosti_Constant_h
+#ifndef TractorFC_Constant_h
+#define TractorFC_Constant_h
 
-// This URL is used in the App Delegate to get statistics of the application usage.
-#define STATISTICS_URL @"http://statistics.tgbs.ir/ct/index.php?id=17"
 
 
 #define NO_CONNECTION_ALERT_TITLE @"TractorFC"
@@ -18,16 +16,9 @@
 #define NO_CONNECTION_ALERT_VIEW_COLOR colorWithRed:0.129 green:0.129 blue:0.129 alpha:0.8
 #define NO_CONNECTION_ALERT_VIEW_STROKE_COLOR colorWithRed:0.9 green:0.001 blue:0.001 alpha:0.5
 
-#define ABOUT_APP_TEXT @"برنامه کاربردی همشهری تندرستی توسط شرکت تدبیرگستران بهینه ساز و به سفارش موسسه همشهری طراحی و پیاده سازی شده است. طراحی و تولید این برنامه به منظور نمایش نسخه اینترنتی سایت این مجله در آیفون و آیپاد تاچ صورت گرفته و استفاده از آن منوط به وجود شبکه اینترنتی است. کلیه حقوق محتوای این برنامه متعلق به موسسه همشهری است. هرگونه استفاده از لوگو، طرح و کدهای این برنامه پیگرد قانونی دارد."
+#define ABOUT_APP_TEXT @""
 
 
-
-#define COLUMN_COUNT_P 2
-#define COLUMN_COUNT_L 2
-#define ITEM_SIZE      CGSizeMake(160,78);
-
-#define PortraitRect CGRectMake(0, 0, 320, 460)
-#define LandscapeRect CGRectMake(0, 0, 480, 300)
 
 // The frame  of header view equal nib file
 #define HEADER_FRAME  CGRectMake(0, 0, 320, 79)
@@ -35,8 +26,6 @@
 // The frame of title view
 #define TITLE_Frame  CGRectMake(10, 80, 300, 25)
 
-// The frame of footer view
-#define FOOTER_Frame  CGRectMake(0, 463, 320, 20)
 
 
 // if the height of footer (FOOTER_Frame)changed, this value will change.

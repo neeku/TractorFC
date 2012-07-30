@@ -9,14 +9,12 @@
 #import "TitleViewController.h"
 #import "RssParser.h"
 #import "RssData.h"
-//#import "GridMenuViewController.h"
 #import "Constant.h"
 #import "ProAlertView.h"
 #import "FarsiNumerals.h"
 #import "AppDelegate.h"
 
 @interface TitleViewController ()
-//- (void)itemPressed:(id)sender;
     
 @end
 
@@ -26,7 +24,6 @@
 #define PHOTO_TAG         4
 #define IMAGE_TAG         5
 
-//RssParser      *rssParser;
 @implementation TitleViewController
 
 @synthesize titleTableView;
@@ -51,37 +48,15 @@
 
 - (void)viewDidLoad
 {
-//    nomatchesView = [[UIView alloc] initWithFrame:self.view.frame];
-//    nomatchesView.backgroundColor = [UIColor clearColor];
-//    
-//    UILabel *matchesLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0,320,320)];
-//    matchesLabel.font = [UIFont boldSystemFontOfSize:18];
-//    matchesLabel.minimumFontSize = 12.0f;
-//    matchesLabel.numberOfLines = 1;
-//    matchesLabel.lineBreakMode = UILineBreakModeWordWrap;
-//    matchesLabel.shadowColor = [UIColor lightTextColor];
-//    matchesLabel.textColor = [UIColor darkGrayColor];
-//    matchesLabel.shadowOffset = CGSizeMake(0, 1);
-//    matchesLabel.backgroundColor = [UIColor clearColor];
-//    matchesLabel.textAlignment =  UITextAlignmentCenter;
-//    
-//    //Here is the text for when there are no results
-//    matchesLabel.text = @"No Content";
-//    
-//    
-//    nomatchesView.hidden = YES;
-//    [nomatchesView addSubview:matchesLabel];
-//    [self.titleTableView insertSubview:nomatchesView belowSubview:self.titleTableView];
-//    
-//    
+
     NSLog(@"parse:,%@", parseFinished);
     [super viewDidLoad];
-//    titleView = [[NATitleBar alloc]initWithFrame:HEADER_FRAME];
-//    titleView.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:titleView];
-//    
-//    [titleView.back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-//    [titleView.home addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
+    titleView = [[NATitleBar alloc]initWithFrame:HEADER_FRAME];
+    titleView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:titleView];
+    
+    [titleView.back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [titleView.home addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
     
     
     //_nshamekhi_ Gets the selected category name from the CategoryPlist.plist file and sets it to the title for the view.
@@ -164,7 +139,7 @@
 
     
     
-    return YES;//(interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 - (void)back {
@@ -172,7 +147,7 @@
 }
 - (void)home {
     [self.navigationController popToRootViewControllerAnimated:YES];
-    NSLog(@"gohome Pressed");
+    NSLog(@"home Pressed");
 }
 
 #pragma Table Data source
@@ -181,13 +156,7 @@
 {
     NSInteger rowCount = [[[self rssParser] rssItems] count];
     NSLog(@"count1=%i", rowCount);
-    //If there is no table data, unhide the "No matches" view
-//    if(rowCount == 0 ){
-//        nomatchesView.hidden = NO;
-//    } else {
-//        nomatchesView.hidden = YES;
-//    }
-    
+   
      
 
         return rowCount;
@@ -276,7 +245,6 @@
     titleLabel.text = [blank stringByAppendingString:[FarsiNumerals convertNumeralsToFarsi:[data shortTitle]]];
     //Label.text = [data pubDate];
     summaryLabel.text = [data shortDescription];
-    //blank = @"                     ";
     
     if ([data image] != nil) {
         [photo setImage:[data image]];
@@ -332,7 +300,7 @@
     }
     
 }
-// dont not call
+
 - (void)displayImage:(NSArray *)argArray {
 
     [(UIImageView *)[argArray objectAtIndex:0] setImage:(UIImage *)[argArray objectAtIndex:1]];
@@ -374,7 +342,6 @@
     NSInteger rowCount = [[[self rssParser] rssItems] count];
 
     if (rowCount!=0) {
-        //
         
         titleTableView.delegate = self;
         titleTableView.dataSource = self;

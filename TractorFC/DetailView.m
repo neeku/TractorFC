@@ -25,7 +25,7 @@
 @synthesize selectedItem;
 @synthesize rssParser;
 @synthesize rssData;
-@synthesize footer;
+@synthesize header;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -105,15 +105,15 @@
     }
     
     
-//    header = [[NATitleBar alloc]initWithFrame:HEADER_FRAME];
-//    header.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:header];
-//    header.label.text = globalCategoryName;
-//    header.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-//
-//    
-//    [header.back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-//    [header.home addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
+    header = [[NATitleBar alloc]initWithFrame:HEADER_FRAME];
+    header.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:header];
+    header.label.text = globalCategoryName;
+    header.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+
+    
+    [header.back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [header.home addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
 
     UIView *titleView = [[UIView alloc]initWithFrame:TITLE_Frame];
     titleView.backgroundColor = [UIColor clearColor];
@@ -153,16 +153,6 @@
 //    [self.view addSubview:titleView];
     
     
-    footer = [[UIView alloc]initWithFrame:CGRectMake(0,
-                                                     self.view.frame.size.height-Y_ORIGIN_FOOTER,
-                                                     self.view.frame.size.width,
-                                                     Y_ORIGIN_FOOTER)];
-    footer.backgroundColor = [UIColor darkGrayColor];
-    UIImageView *footerIMG = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"footer"]];
-    footerIMG.frame = CGRectMake(0, 0, footer.frame.size.width, footer.frame.size.height);
-    footerIMG.autoresizingMask =  UIViewAutoresizingFlexibleWidth;
-    [footer addSubview:footerIMG];
-    [self.view addSubview:footer];
 }
 
 - (void)viewDidLoad
@@ -193,14 +183,7 @@
     NSLog(@"height=%f",webView.frame.size.height);
 
     
-    if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-    {
-        footer.frame = CGRectMake(0, 280, L_WIDTH, Y_ORIGIN_FOOTER);
-    }
-    else {
-        footer.frame = CGRectMake(0, 440, P_WIDTH, Y_ORIGIN_FOOTER);
-    }
-    
+
     return YES;
 }
 

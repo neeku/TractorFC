@@ -64,7 +64,6 @@
 {
     parsingNewsWithNumber = 0;
     @autoreleasepool {
-    //NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     //To suppress the leak in NSXMLParser.
@@ -77,8 +76,6 @@
     NSArray *array = [item objectForKey:@"Root"];
     NSURL *url = [NSURL URLWithString:
                   [[array objectAtIndex:[selectedCategory intValue]]objectForKey:@"URL"]];
-     //   NSLog(@"selected cat:%@", selectedCategory);
-    //NSLog(@"URL=%@",url);
     BOOL success = NO;
     NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
     [parser setDelegate:self];
@@ -101,7 +98,6 @@
 		elementName = qualifiedName;
 	}
     
-    //NSLog(@"elementName: %@", elementName);
     
 	if ([elementName isEqualToString:@"item"]) 
     {
@@ -192,17 +188,11 @@
         imageURL = [descriptionTagContent substringFromIndex:startIndex.location];
     
         NSRange    endIndex   = [imageURL rangeOfString: @"\""];
-        // NSInteger  length     = (endIndex.location - );  
         imageURL = [imageURL substringToIndex:endIndex.location];
-        //  imageURL = [descriptionTagContent substringWithRange:NSMakeRange (NSMaxRange(startIndex) , length)];
     
     
-    
-        //NSDictionary *attribDict;
-        //self.currentItem.mediaUrl = [attribDict valueForKey:@"url"];
         //strat downloading image
         self.currentItem.mediaUrl = [NSString stringWithString:imageURL];
-        // NSLog(@"IMAGE URL: %@", imageURL);
         NSArray *argArray = [NSArray arrayWithObjects:self.currentItem,
                          nil]; 
         NSInvocationOperation *operation = [[NSInvocationOperation alloc] 
@@ -212,9 +202,9 @@
         [queue addOperation:operation]; 
     }
     
-    //_nshamekhi_ Strips all HTML tags in the CDATABlock, and substrings 220 characters from the beginning to display as the intro text, or summary of the news in tableview cells in TitleViewController class.
+    //_nshamekhi_ Strips all HTML tags in the CDATABlock, and substrings 300 characters from the beginning to display as the intro text, or summary of the news in tableview cells in TitleViewController class.
     NSString *description = [descriptionTagContent stripHtml];
-   // NSLog(@"Shortened Description: %@",  description);
+
     if (description.length >= 300)
     {
         self.currentItem.shortDescription = [FarsiNumerals convertNumeralsToFarsi:[description substringToIndex:300]];
@@ -224,8 +214,6 @@
         self.currentItem.shortDescription = [FarsiNumerals convertNumeralsToFarsi:description];    
     }
     self.currentItem.fullDescription = [FarsiNumerals convertNumeralsToFarsi:description]; 
-    //NSLog(@"descriptiontagcontent:%@", descriptionTagContent);
-    //NSString *fullDescription = [descriptionTagContent st
     
     
 }
@@ -245,11 +233,8 @@
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser {    
     NSLog(@"parserDidEndDocument");
-    //TitleViewController *viewController = [[TitleViewController alloc] init];
-    //viewController.parseFinished = @"1";
     parseFinished = [[NSString  alloc] initWithFormat:@"%d", 1];
     
-   // NSLog(@"rss parser parser finished, %@", viewController.parseFinished);
     parsingNewsWithNumber = 0;
     [(id)[self delegate] performSelectorOnMainThread:@selector(processCompleted)
                                           withObject:nil
@@ -265,14 +250,12 @@
 
     NSLog(@"beforeloadimage");
     
-    //UIImage* image = nil;
     NSData* imageData;
     
     if(data.image == nil)
     {
         imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[data mediaUrl]]];
         data.image = [UIImage  imageWithData:imageData];
-        //NSLog(@"operations=%d",[queue operationCount]);
         [(id)[self delegate] performSelectorOnMainThread:@selector(imageProcessCompleted)
                                               withObject:nil
                                            waitUntilDone:NO];
@@ -281,16 +264,6 @@
     
 }
 
-//- (void)reloadTabl:(NSTimer *)timer {
-//    [(id)[self delegate] performSelectorOnMainThread:@selector(processCompleted)
-//                                          withObject:nil
-//                                       waitUntilDone:NO];
-//    
-//    if ([queue operationCount] == 0) {
-//        [timer invalidate];
-//        timer = nil;
-//    }
-//}
 
 
 @end

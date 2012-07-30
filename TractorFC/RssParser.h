@@ -20,13 +20,12 @@
     NSOperationQueue        *_retrieverQueue;
     NSUInteger              parsingNewsWithNumber;
     NSOperationQueue        *queue;
-   // NSTimer                 *timer;
     NSString                *imageURL;
 
 }
 
 @property (strong, nonatomic)   RssData             * currentItem;
-@property (nonatomic)   NSMutableString     * currentItemValue;
+@property (nonatomic)           NSMutableString     * currentItemValue;
 @property (readonly)            NSMutableArray      * rssItems;
 
 @property (nonatomic)   id<RssParserDelegate> delegate;

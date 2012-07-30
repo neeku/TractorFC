@@ -33,7 +33,6 @@
 		case 1:
 			[image setImage:[UIImage imageNamed:@"1.jpeg"]];			
 			break;
-		
 		case 2:
             [image setImage:[UIImage imageNamed:@"2.jpeg"]];
             break;
