@@ -8,15 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NSString *globalCategoryName;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic)          UIWindow *window;
 
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
+@property (strong, nonatomic) IBOutlet UINavigationController *navigationController;
+@property (strong, nonatomic)          UITabBarController     *tabBarController;
 
 @end

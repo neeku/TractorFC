@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Root</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>اخبار تراکتورسازی</string>
+			<key>IMG-N</key>
+			<string>unknown.jpg</string>
+			<key>IMG-S</key>
+			<string></string>
+			<key>URL</key>
+			<string>http://tractorchelar.com/index.php?format=feed</string>
+		</dict>
+	</array>
+</dict>
+</plist>
