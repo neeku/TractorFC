@@ -54,16 +54,14 @@
     //self.appName.userInteractionEnabled = YES;
 
     
-    //\n ___________________________\n\n Hamshahri app is ordered by Hamshahri organization, and developed and designed by TGBS Co. Hamshahrionline.com is the online edition of the Iranian daily, Hamshahri. This application displays the news from Hamshahri Online website. This application DOES NOT provide any contents itself.
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleVersionKey];
     NSString *name= [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleNameKey];
     
-	self.copyright.text = [NSString stringWithFormat:@"%@ V. %@ \n ©2012 TGBS",name,version];
+	self.copyright.text = [NSString stringWithFormat:@"%@ V. %@ \n ©2012",name,version];
     copyright.font = [UIFont boldSystemFontOfSize:12];
     copyright.userInteractionEnabled = NO;
     
-    // self.detail.text = @"\n\n Credits:\n Project Manager: Mahdi Farimani\n Programmer: Neeku Shamekhi\n Graphic Designer: Amir Baha\n IT Admin: Majid Vakili, Mehrad Mahmoudian\n Server-side Programmer: Mozhgan Jelodar\n Marketing: Pouria Oladzad
-    //\n\n Credits: \n Project Manager: Majid Vakili\n Programmers: Neeku Shamekhi, Fatemeh Shapouri\n Graphic Designer: Amir Baha\n
+
     
     //NSLog(@"version=%@",version);
 }

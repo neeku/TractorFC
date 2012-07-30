@@ -1,5 +1,5 @@
 //
-//  DetailView.h
+//  DetailView1.h
 //  
 //
 //  Created by  on 4/24/12.
@@ -11,14 +11,13 @@
 #import "RssParser.h"
 @class RssParser;
 @class RssData;
-@interface DetailView : UIViewController <UIWebViewDelegate,UIScrollViewDelegate>
+@interface DetailView1 : UIViewController <UIWebViewDelegate,UIScrollViewDelegate>
 
 @property (nonatomic)                       RssData         *rssData;
 @property (nonatomic)                       NSString        *selectedItem;
 @property (strong, nonatomic)               RssParser       *rssParser;
-@property (strong, nonatomic)   IBOutlet    NATitleBar      *header;
+@property (strong, nonatomic)   IBOutlet   NATitleBar      *header;
 @property (strong, nonatomic)               UIWebView       *webView;
-@property (nonatomic)                       UIView          *footer;
 
 
 - (void)back;

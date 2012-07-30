@@ -27,12 +27,8 @@
 #define TITLE_Frame  CGRectMake(10, 80, 300, 25)
 
 
-
-// if the height of footer (FOOTER_Frame)changed, this value will change.
-#define Y_ORIGIN_FOOTER  20
-
 // if the height of header (HEADER_FRAME)changed, this value will change.
-#define Y_ORIGIN_MAIN  79
+#define Y_ORIGIN_MAIN  44
 
 //Portrait Width
 #define P_WIDTH   320 

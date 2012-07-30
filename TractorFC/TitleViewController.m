@@ -32,7 +32,6 @@
 @synthesize activityIndicator;
 @synthesize titleView;
 @synthesize parseFinished;
-@synthesize footer;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -75,16 +74,6 @@
     [[self rssParser] setDelegate:self];
     [[self rssParser] startProcess];
     
-    footer = [[UIView alloc]initWithFrame:CGRectMake(0,
-                                                     self.view.frame.size.height- Y_ORIGIN_FOOTER,
-                                                     self.view.frame.size.width,
-                                                     Y_ORIGIN_FOOTER)];
-    footer.backgroundColor = [UIColor darkGrayColor];
-    UIImageView *footerIMG = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"footer"]];
-    footerIMG.frame = CGRectMake(0, 0, footer.frame.size.width, footer.frame.size.height);
-    footerIMG.autoresizingMask =  UIViewAutoresizingFlexibleWidth;
-    [footer addSubview:footerIMG];
-    [self.view addSubview:footer];
     
 }
 
@@ -115,28 +104,12 @@
     
     //NSLog(@"frame=%f",self.view.frame.size.width);
     float width;
-    if (interfaceOrientation == UIInterfaceOrientationPortrait ||
-        interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-        width = P_WIDTH;
-        titleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
-    }
-    else {
-        width = L_WIDTH;
-        titleTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
-    }
+
     titleView.frame = CGRectMake(titleView.frame.origin.x,
                                  titleView.frame.origin.y,
                                  width,
                                  titleView.frame.size.height);
     NSLog(@"table view y:%f", titleView.frame.origin.y);
-    if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight)
-    {
-        footer.frame = CGRectMake(0, 280, L_WIDTH, Y_ORIGIN_FOOTER);
-    }
-    else {
-        footer.frame = CGRectMake(0, 440, P_WIDTH, Y_ORIGIN_FOOTER);
-    }
-
     
     
     return YES;
@@ -265,7 +238,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DetailView *detailViewController = [[DetailView alloc] initWithNibName:@"" bundle:nil];
+    DetailView1 *detailViewController = [[DetailView1 alloc] initWithNibName:@"" bundle:nil];
     [detailViewController setRssData:[[[self rssParser] rssItems] objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:detailViewController animated:YES]; 
 	NSLog(@"dv loading");

@@ -1,5 +1,5 @@
 //
-//  GamesTableViewController.h
+//  LeagueTableViewController.h
 //  TractorFC
 //
 //  Created by neeku shamekhi on 7/29/12.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GamesTableViewController : UIViewController
+@interface LeagueTableViewController : UIViewController
 
-@property (nonatomic) IBOutlet UIWebView *gamesTableWebView;
+@property (nonatomic) IBOutlet UIWebView *leagueTableWebView;
 
 @end

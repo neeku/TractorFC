@@ -10,8 +10,8 @@
 		293EE8C415C53BFE0099CE73 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 293EE8C315C53BFE0099CE73 /* Icon.png */; };
 		293EE8C615C53C040099CE73 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 293EE8C515C53C040099CE73 /* Icon@2x.png */; };
 		293EE8CE15C543840099CE73 /* GamesTable.js in Resources */ = {isa = PBXBuildFile; fileRef = 293EE8CD15C543840099CE73 /* GamesTable.js */; };
-		293EE8D215C543B80099CE73 /* GamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293EE8D015C543B80099CE73 /* GamesTableViewController.m */; };
-		293EE8D315C543B80099CE73 /* GamesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293EE8D115C543B80099CE73 /* GamesTableViewController.xib */; };
+		293EE8D215C543B80099CE73 /* LeagueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 293EE8D015C543B80099CE73 /* LeagueTableViewController.m */; };
+		293EE8D315C543B80099CE73 /* LeagueTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293EE8D115C543B80099CE73 /* LeagueTableViewController.xib */; };
 		293EE8D415C54A290099CE73 /* GamesTable.js in Sources */ = {isa = PBXBuildFile; fileRef = 293EE8CD15C543840099CE73 /* GamesTable.js */; };
 		293EE8D715C54D3E0099CE73 /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 293EE8D615C54D3E0099CE73 /* table.png */; };
 		293EE8D915C54E1A0099CE73 /* landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 293EE8D815C54E1A0099CE73 /* landscape.png */; };
@@ -27,6 +27,9 @@
 		29E191F915C655900059282B /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E191F715C655900059282B /* Background.png */; };
 		29E191FA15C655900059282B /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E191F815C655900059282B /* Background@2x.png */; };
 		29E1920515C65F260059282B /* Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E1920415C65F260059282B /* Intro.png */; };
+		29E1920D15C666070059282B /* DetailView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E1920C15C666070059282B /* DetailView1.m */; };
+		29E1921115C675840059282B /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E1920F15C675840059282B /* TitleViewController.m */; };
+		29E1921415C6BA8E0059282B /* TitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E1921315C6BA8E0059282B /* TitleViewController.xib */; };
 		29FA076415C51A4C009A9513 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA076315C51A4C009A9513 /* UIKit.framework */; };
 		29FA076615C51A4C009A9513 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA076515C51A4C009A9513 /* Foundation.framework */; };
 		29FA076815C51A4C009A9513 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA076715C51A4C009A9513 /* CoreGraphics.framework */; };
@@ -43,9 +46,6 @@
 		29FA079715C51AFF009A9513 /* UIWebView+Clean.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA079615C51AFF009A9513 /* UIWebView+Clean.m */; };
 		29FA079D15C51D24009A9513 /* FarsiNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA079C15C51D24009A9513 /* FarsiNumerals.m */; };
 		29FA07A115C51F0F009A9513 /* NSString_StripHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07A015C51F0F009A9513 /* NSString_StripHTML.m */; };
-		29FA07A515C51F20009A9513 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07A315C51F20009A9513 /* TitleViewController.m */; };
-		29FA07A615C51F20009A9513 /* TitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07A415C51F20009A9513 /* TitleViewController.xib */; };
-		29FA07A915C51F29009A9513 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07A815C51F29009A9513 /* DetailView.m */; };
 		29FA07AE15C51F4E009A9513 /* NATitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07AC15C51F4E009A9513 /* NATitleBar.m */; };
 		29FA07AF15C51F4E009A9513 /* NATitleBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07AD15C51F4E009A9513 /* NATitleBar.xib */; };
 		29FA07B315C51F74009A9513 /* CategoryPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07B015C51F74009A9513 /* CategoryPlist.plist */; };
@@ -62,9 +62,9 @@
 		293EE8C315C53BFE0099CE73 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		293EE8C515C53C040099CE73 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		293EE8CD15C543840099CE73 /* GamesTable.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GamesTable.js; sourceTree = "<group>"; };
-		293EE8CF15C543B80099CE73 /* GamesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesTableViewController.h; sourceTree = "<group>"; };
-		293EE8D015C543B80099CE73 /* GamesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesTableViewController.m; sourceTree = "<group>"; };
-		293EE8D115C543B80099CE73 /* GamesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamesTableViewController.xib; sourceTree = "<group>"; };
+		293EE8CF15C543B80099CE73 /* LeagueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueTableViewController.h; sourceTree = "<group>"; };
+		293EE8D015C543B80099CE73 /* LeagueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueTableViewController.m; sourceTree = "<group>"; };
+		293EE8D115C543B80099CE73 /* LeagueTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeagueTableViewController.xib; sourceTree = "<group>"; };
 		293EE8D615C54D3E0099CE73 /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
 		293EE8D815C54E1A0099CE73 /* landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landscape.png; sourceTree = "<group>"; };
 		293EE8DA15C553660099CE73 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
@@ -79,6 +79,11 @@
 		29E191F715C655900059282B /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		29E191F815C655900059282B /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
 		29E1920415C65F260059282B /* Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro.png; sourceTree = "<group>"; };
+		29E1920B15C666070059282B /* DetailView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView1.h; sourceTree = "<group>"; };
+		29E1920C15C666070059282B /* DetailView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView1.m; sourceTree = "<group>"; };
+		29E1920E15C675840059282B /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
+		29E1920F15C675840059282B /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
+		29E1921315C6BA8E0059282B /* TitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleViewController.xib; sourceTree = "<group>"; };
 		29FA075F15C51A4C009A9513 /* TractorFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TractorFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FA076315C51A4C009A9513 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29FA076515C51A4C009A9513 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,11 +111,6 @@
 		29FA079C15C51D24009A9513 /* FarsiNumerals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FarsiNumerals.m; sourceTree = "<group>"; };
 		29FA079F15C51F0F009A9513 /* NSString_StripHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_StripHTML.h; sourceTree = "<group>"; };
 		29FA07A015C51F0F009A9513 /* NSString_StripHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_StripHTML.m; sourceTree = "<group>"; };
-		29FA07A215C51F20009A9513 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
-		29FA07A315C51F20009A9513 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
-		29FA07A415C51F20009A9513 /* TitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleViewController.xib; sourceTree = "<group>"; };
-		29FA07A715C51F29009A9513 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
-		29FA07A815C51F29009A9513 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
 		29FA07AB15C51F4E009A9513 /* NATitleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATitleBar.h; sourceTree = "<group>"; };
 		29FA07AC15C51F4E009A9513 /* NATitleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATitleBar.m; sourceTree = "<group>"; };
 		29FA07AD15C51F4E009A9513 /* NATitleBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NATitleBar.xib; sourceTree = "<group>"; };
@@ -142,14 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		293EE8C715C541B40099CE73 /* GamesTable VC */ = {
+		293EE8C715C541B40099CE73 /* LeagueTable VC */ = {
 			isa = PBXGroup;
 			children = (
-				293EE8CF15C543B80099CE73 /* GamesTableViewController.h */,
-				293EE8D015C543B80099CE73 /* GamesTableViewController.m */,
-				293EE8D115C543B80099CE73 /* GamesTableViewController.xib */,
+				293EE8CF15C543B80099CE73 /* LeagueTableViewController.h */,
+				293EE8D015C543B80099CE73 /* LeagueTableViewController.m */,
+				293EE8D115C543B80099CE73 /* LeagueTableViewController.xib */,
 			);
-			name = "GamesTable VC";
+			name = "LeagueTable VC";
 			sourceTree = "<group>";
 		};
 		293EE8D515C54D330099CE73 /* Images */ = {
@@ -206,7 +206,7 @@
 		29FA076B15C51A4C009A9513 /* TractorFC */ = {
 			isa = PBXGroup;
 			children = (
-				293EE8C715C541B40099CE73 /* GamesTable VC */,
+				293EE8C715C541B40099CE73 /* LeagueTable VC */,
 				29FA07BD15C520F0009A9513 /* Photos VC */,
 				29FA07B715C520BE009A9513 /* Intro VC */,
 				29FA07B015C51F74009A9513 /* CategoryPlist.plist */,
@@ -304,9 +304,9 @@
 		29FA078515C51AA4009A9513 /* Title VC */ = {
 			isa = PBXGroup;
 			children = (
-				29FA07A215C51F20009A9513 /* TitleViewController.h */,
-				29FA07A315C51F20009A9513 /* TitleViewController.m */,
-				29FA07A415C51F20009A9513 /* TitleViewController.xib */,
+				29E1920E15C675840059282B /* TitleViewController.h */,
+				29E1920F15C675840059282B /* TitleViewController.m */,
+				29E1921315C6BA8E0059282B /* TitleViewController.xib */,
 			);
 			name = "Title VC";
 			sourceTree = "<group>";
@@ -314,8 +314,8 @@
 		29FA078615C51AAE009A9513 /* Detail VC */ = {
 			isa = PBXGroup;
 			children = (
-				29FA07A715C51F29009A9513 /* DetailView.h */,
-				29FA07A815C51F29009A9513 /* DetailView.m */,
+				29E1920B15C666070059282B /* DetailView1.h */,
+				29E1920C15C666070059282B /* DetailView1.m */,
 			);
 			name = "Detail VC";
 			sourceTree = "<group>";
@@ -402,7 +402,6 @@
 			files = (
 				29FA077015C51A4C009A9513 /* InfoPlist.strings in Resources */,
 				29FA079115C51AD9009A9513 /* ModalViewController.xib in Resources */,
-				29FA07A615C51F20009A9513 /* TitleViewController.xib in Resources */,
 				29FA07AF15C51F4E009A9513 /* NATitleBar.xib in Resources */,
 				29FA07B315C51F74009A9513 /* CategoryPlist.plist in Resources */,
 				29FA07B415C51F74009A9513 /* htmlPattern.html in Resources */,
@@ -413,7 +412,7 @@
 				293EE8C415C53BFE0099CE73 /* Icon.png in Resources */,
 				293EE8C615C53C040099CE73 /* Icon@2x.png in Resources */,
 				293EE8CE15C543840099CE73 /* GamesTable.js in Resources */,
-				293EE8D315C543B80099CE73 /* GamesTableViewController.xib in Resources */,
+				293EE8D315C543B80099CE73 /* LeagueTableViewController.xib in Resources */,
 				293EE8D715C54D3E0099CE73 /* table.png in Resources */,
 				293EE8D915C54E1A0099CE73 /* landscape.png in Resources */,
 				293EE8DB15C553660099CE73 /* news.png in Resources */,
@@ -428,6 +427,7 @@
 				29E191F915C655900059282B /* Background.png in Resources */,
 				29E191FA15C655900059282B /* Background@2x.png in Resources */,
 				29E1920515C65F260059282B /* Intro.png in Resources */,
+				29E1921415C6BA8E0059282B /* TitleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,12 +449,12 @@
 				29FA079715C51AFF009A9513 /* UIWebView+Clean.m in Sources */,
 				29FA079D15C51D24009A9513 /* FarsiNumerals.m in Sources */,
 				29FA07A115C51F0F009A9513 /* NSString_StripHTML.m in Sources */,
-				29FA07A515C51F20009A9513 /* TitleViewController.m in Sources */,
-				29FA07A915C51F29009A9513 /* DetailView.m in Sources */,
 				29FA07AE15C51F4E009A9513 /* NATitleBar.m in Sources */,
 				29FA07BB15C520C7009A9513 /* IntroViewController.m in Sources */,
 				29FA07C115C520F8009A9513 /* PhotosViewController.m in Sources */,
-				293EE8D215C543B80099CE73 /* GamesTableViewController.m in Sources */,
+				293EE8D215C543B80099CE73 /* LeagueTableViewController.m in Sources */,
+				29E1920D15C666070059282B /* DetailView1.m in Sources */,
+				29E1921115C675840059282B /* TitleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

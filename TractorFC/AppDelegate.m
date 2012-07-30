@@ -10,7 +10,7 @@
 #import "IntroViewController.h"
 #import "TitleViewController.h"
 #import "PhotosViewController.h"
-#import "GamesTableViewController.h"
+#import "LeagueTableViewController.h"
 
 
 @implementation AppDelegate
@@ -24,14 +24,22 @@
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    self.window.rootViewController = navigationController;
+    
+    
     UIViewController *viewController0 = [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
     UIViewController *viewController1 = [[TitleViewController alloc] initWithNibName:@"TitleViewController" bundle:nil];
     UIViewController *viewController2 = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" bundle:nil];
-    UIViewController *viewController3 = [[GamesTableViewController alloc] initWithNibName:@"GamesTableViewController" bundle:nil];
+    UIViewController *viewController3 = [[LeagueTableViewController alloc] initWithNibName:@"LeagueTableViewController" bundle:nil];
     
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController0, viewController1, viewController2, viewController3,nil];
     self.window.rootViewController = self.tabBarController;
+    
+    
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -39,7 +47,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. League should use this method to pause the game.
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application

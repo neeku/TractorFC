@@ -1,12 +1,12 @@
 //
-//  DetailView.m
+//  DetailView1.m
 //  
 //
 //  Created by  on 4/24/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "DetailView.h"
+#import "DetailView1.h"
 #import "RssData.h"
 #import "RssParser.h"
 #import "AppDelegate.h"
@@ -14,18 +14,17 @@
 
 @class RssParser;
 
-@interface DetailView ()
+@interface DetailView1 ()
 
 @end
 
-@implementation DetailView
+@implementation DetailView1
 
-//@synthesize header;
+@synthesize header;
 @synthesize webView;
 @synthesize selectedItem;
-@synthesize rssParser;
 @synthesize rssData;
-@synthesize header;
+@synthesize rssParser;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -49,12 +48,7 @@
     // If you use Interface Builder to create your views, then you must NOT override this method.
     NSString *path = [[NSString alloc]initWithString:[[NSBundle mainBundle]pathForResource:@"htmlPattern" ofType:@"html"]];
     
-    /*
-     /Users/nshamekhi/Library/Application Support/iPhone Simulator/5.0/Applications/FE14D377-4835-4458-A87F-D78FD49775B6/Javan.app */
-    
-     
-//     NSString *paths = [[NSString alloc]initWithString:[[NSBundle mainBundle]pathForResource:@"table-web-bgP" ofType:@"png"]];
-    //NSLog(@"path=%@",paths);
+
     NSError *error;
     NSString *pattern = [[NSString alloc]initWithContentsOfFile:path 
                                                        encoding:NSUTF8StringEncoding
@@ -171,10 +165,10 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-//    header.frame = CGRectMake(header.frame.origin.x,
-//                                 header.frame.origin.y,
-//                                 self.view.frame.size.width,
-//                                 header.frame.size.height);
+    header.frame = CGRectMake(header.frame.origin.x,
+                                 header.frame.origin.y,
+                                 self.view.frame.size.width,
+                                 header.frame.size.height);
     
     webView.frame = CGRectMake(webView.frame.origin.x,
                                  webView.frame.origin.y,
@@ -183,7 +177,6 @@
     NSLog(@"height=%f",webView.frame.size.height);
 
     
-
     return YES;
 }
 

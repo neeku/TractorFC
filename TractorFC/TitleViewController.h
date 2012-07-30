@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RssParser.h"
 #import "NATitleBar.h"
-#import "DetailView.h"
+#import "DetailView1.h"
 
 @interface TitleViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,RssParserDelegate>
 {
@@ -23,7 +23,6 @@
 @property (unsafe_unretained, nonatomic)IBOutlet     UITableView             *titleTableView;
 @property (nonatomic)                                UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic)           IBOutlet     NATitleBar              *titleView;
-@property (nonatomic)                                UIView                  *footer;
 
 - (void)loadImage: (NSArray *) argArray;
 - (void)displayImage: (NSArray *) argArray;
