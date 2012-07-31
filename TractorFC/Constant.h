@@ -28,7 +28,7 @@
 
 
 // if the height of header (HEADER_FRAME)changed, this value will change.
-#define Y_ORIGIN_MAIN  44
+#define Y_ORIGIN_MAIN  79
 
 //Portrait Width
 #define P_WIDTH   320 

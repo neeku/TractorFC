@@ -74,7 +74,6 @@
     [[self rssParser] setDelegate:self];
     [[self rssParser] startProcess];
     
-    
 }
 
 - (void)viewDidUnload
@@ -103,14 +102,6 @@
 
     
     //NSLog(@"frame=%f",self.view.frame.size.width);
-    float width;
-
-    titleView.frame = CGRectMake(titleView.frame.origin.x,
-                                 titleView.frame.origin.y,
-                                 width,
-                                 titleView.frame.size.height);
-    NSLog(@"table view y:%f", titleView.frame.origin.y);
-    
     
     return YES;
 }
@@ -238,7 +229,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DetailView1 *detailViewController = [[DetailView1 alloc] initWithNibName:@"" bundle:nil];
+    DetailView *detailViewController = [[DetailView alloc] initWithNibName:@"" bundle:nil];
     [detailViewController setRssData:[[[self rssParser] rssItems] objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:detailViewController animated:YES]; 
 	NSLog(@"dv loading");

@@ -24,10 +24,6 @@
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
-    self.window.rootViewController = navigationController;
-    
-    
     UIViewController *viewController0 = [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
     UIViewController *viewController1 = [[TitleViewController alloc] initWithNibName:@"TitleViewController" bundle:nil];
     UIViewController *viewController2 = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" bundle:nil];
@@ -36,10 +32,6 @@
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController0, viewController1, viewController2, viewController3,nil];
     self.window.rootViewController = self.tabBarController;
-    
-    
-    
-    
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,6 +7,7 @@
 //
 
 #import "LeagueTableViewController.h"
+#import "FarsiNumberals.h"
 
 @interface LeagueTableViewController ()
 
@@ -30,7 +31,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [leagueTableWebView setDelegate:self];
+
+    NSURL *url = [[NSURL alloc] initWithString:@"http://www.iranskin.com/league/view.php?league=iran&fc=333333&tfc=FFFFFF&btc=B00000&bic=686868&bg1=DBDBDB&bg2=FFFFFF&gp=1&won=1&drawn=1&lost=1&gs=none&ga=none&gr=none"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [leagueTableWebView loadRequest:request];
+    leagueTableWebView.userInteractionEnabled = NO;
+    [self.view addSubview:leagueTableWebView];
 }
 
 

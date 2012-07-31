@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RssParser.h"
 #import "NATitleBar.h"
-#import "DetailView1.h"
+#import "DetailView.h"
 
 @interface TitleViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,RssParserDelegate>
 {
