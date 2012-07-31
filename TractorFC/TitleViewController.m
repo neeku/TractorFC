@@ -13,6 +13,8 @@
 #import "ProAlertView.h"
 #import "FarsiNumerals.h"
 #import "AppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
+#import "DetailView.h"
 
 @interface TitleViewController ()
     
@@ -180,6 +182,13 @@
         photo.tag = PHOTO_TAG;
         photo.backgroundColor = [UIColor PHOTO_BG_COLOR];
         photo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+        photo.layer.masksToBounds  = YES;
+        photo.layer.backgroundColor = [[UIColor clearColor] CGColor];
+        photo.layer.borderWidth = 3;
+        photo.layer.borderColor = [[UIColor darkGrayColor] CGColor];
+        photo.layer.cornerRadius = 8;
+        photo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+        
         [cell1.contentView addSubview:photo];
         
         separator = [[UIImageView alloc]initWithFrame:SEPARATOR_FRAME];
@@ -188,6 +197,9 @@
         separator.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         //| UIViewAutoresizingFlexibleRightMargin| UIViewAutoresizingFlexibleLeftMargin;
         [cell1.contentView addSubview:separator];
+        
+       
+        
     }
     else 
     {
@@ -214,7 +226,7 @@
         [photo setImage:[data image]];
     }
     else {
-        [photo setImage:[UIImage imageNamed:@"Unknown"]];
+        [photo setImage:[UIImage imageNamed:@"DefaultImage"]];
     }
     
     //_nshamekhi_ Changes the selected cell color from default blue color to gray.
@@ -231,8 +243,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailView *detailViewController = [[DetailView alloc] initWithNibName:@"" bundle:nil];
     [detailViewController setRssData:[[[self rssParser] rssItems] objectAtIndex:indexPath.row]];
-    [self.navigationController pushViewController:detailViewController animated:YES]; 
-	NSLog(@"dv loading");
+    [self.navigationController presentModalViewController:detailViewController animated:YES]; 
+	NSLog(@"%@", self.tabBarController);
 }
 
 - (void)loadImage:(NSArray *)argArray {

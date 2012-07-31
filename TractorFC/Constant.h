@@ -21,14 +21,14 @@
 
 
 // The frame  of header view equal nib file
-#define HEADER_FRAME  CGRectMake(0, 0, 320, 79)
+#define HEADER_FRAME  CGRectMake(0, 0, 320, 44)
 
 // The frame of title view
 #define TITLE_Frame  CGRectMake(10, 80, 300, 25)
 
 
 // if the height of header (HEADER_FRAME)changed, this value will change.
-#define Y_ORIGIN_MAIN  79
+#define Y_ORIGIN_MAIN  44
 
 //Portrait Width
 #define P_WIDTH   320 
@@ -62,14 +62,14 @@
 
 //Table View Properties
 #define TITLE_LABEL_FONT boldSystemFontOfSize:13.0
-#define TITLE_LABEL_TEXT_COLOR colorWithRed:0.262 green:0.486 blue:0.286 alpha:1
+#define TITLE_LABEL_TEXT_COLOR blackColor
 #define TITLE_LABEL_BG_COLOR clearColor
 
 #define SUMMARY_LABEL_FONT systemFontOfSize:13.0
-#define SUMMARY_LABEL_TEXT_COLOR darkGrayColor
+#define SUMMARY_LABEL_TEXT_COLOR blackColor
 #define SUMMARY_LABEL_BG_COLOR clearColor
 
-#define PHOTO_BG_COLOR whiteColor
+#define PHOTO_BG_COLOR grayColor
 
 #define SEPARATOR_FRAME     CGRectMake(0, 99, 320, 1)
 

@@ -22,7 +22,10 @@
 		29B78FBE15C55B6600D6F23A /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29B78FBC15C55B6600D6F23A /* 5.jpeg */; };
 		29B78FC015C55BA500D6F23A /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29B78FBF15C55BA500D6F23A /* 7.jpeg */; };
 		29B78FC215C55C0D00D6F23A /* 8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29B78FC115C55C0D00D6F23A /* 8.jpeg */; };
-		29B9D56915C7C548008CCD4B /* LeagueTable.js in Sources */ = {isa = PBXBuildFile; fileRef = 29B9D56815C7C548008CCD4B /* LeagueTable.js */; };
+		29B9D57215C7DC3A008CCD4B /* divider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29B9D57015C7DC3A008CCD4B /* divider@2x.png */; };
+		29B9D57315C7DC3A008CCD4B /* divider.png in Resources */ = {isa = PBXBuildFile; fileRef = 29B9D57115C7DC3A008CCD4B /* divider.png */; };
+		29B9D57A15C7E1D5008CCD4B /* DefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 29B9D57815C7E1D5008CCD4B /* DefaultImage.png */; };
+		29B9D57B15C7E1D5008CCD4B /* DefaultImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29B9D57915C7E1D5008CCD4B /* DefaultImage@2x.png */; };
 		29E191F915C655900059282B /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E191F715C655900059282B /* Background.png */; };
 		29E191FA15C655900059282B /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E191F815C655900059282B /* Background@2x.png */; };
 		29E1920515C65F260059282B /* Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 29E1920415C65F260059282B /* Intro.png */; };
@@ -74,7 +77,10 @@
 		29B78FBC15C55B6600D6F23A /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
 		29B78FBF15C55BA500D6F23A /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
 		29B78FC115C55C0D00D6F23A /* 8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpeg; sourceTree = "<group>"; };
-		29B9D56815C7C548008CCD4B /* LeagueTable.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = LeagueTable.js; sourceTree = "<group>"; };
+		29B9D57015C7DC3A008CCD4B /* divider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "divider@2x.png"; sourceTree = "<group>"; };
+		29B9D57115C7DC3A008CCD4B /* divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divider.png; sourceTree = "<group>"; };
+		29B9D57815C7E1D5008CCD4B /* DefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultImage.png; sourceTree = "<group>"; };
+		29B9D57915C7E1D5008CCD4B /* DefaultImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DefaultImage@2x.png"; sourceTree = "<group>"; };
 		29E191F715C655900059282B /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		29E191F815C655900059282B /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
 		29E1920415C65F260059282B /* Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro.png; sourceTree = "<group>"; };
@@ -147,7 +153,6 @@
 				293EE8CF15C543B80099CE73 /* LeagueTableViewController.h */,
 				293EE8D015C543B80099CE73 /* LeagueTableViewController.m */,
 				293EE8D115C543B80099CE73 /* LeagueTableViewController.xib */,
-				29B9D56815C7C548008CCD4B /* LeagueTable.js */,
 			);
 			name = "LeagueTable VC";
 			sourceTree = "<group>";
@@ -155,6 +160,10 @@
 		293EE8D515C54D330099CE73 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				29B9D57815C7E1D5008CCD4B /* DefaultImage.png */,
+				29B9D57915C7E1D5008CCD4B /* DefaultImage@2x.png */,
+				29B9D57015C7DC3A008CCD4B /* divider@2x.png */,
+				29B9D57115C7DC3A008CCD4B /* divider.png */,
 				29E191F715C655900059282B /* Background.png */,
 				29E191F815C655900059282B /* Background@2x.png */,
 				29E1920415C65F260059282B /* Intro.png */,
@@ -426,6 +435,10 @@
 				29E191F915C655900059282B /* Background.png in Resources */,
 				29E191FA15C655900059282B /* Background@2x.png in Resources */,
 				29E1920515C65F260059282B /* Intro.png in Resources */,
+				29B9D57215C7DC3A008CCD4B /* divider@2x.png in Resources */,
+				29B9D57315C7DC3A008CCD4B /* divider.png in Resources */,
+				29B9D57A15C7E1D5008CCD4B /* DefaultImage.png in Resources */,
+				29B9D57B15C7E1D5008CCD4B /* DefaultImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +465,6 @@
 				29FA07BB15C520C7009A9513 /* IntroViewController.m in Sources */,
 				29FA07C115C520F8009A9513 /* PhotosViewController.m in Sources */,
 				293EE8D215C543B80099CE73 /* LeagueTableViewController.m in Sources */,
-				29B9D56915C7C548008CCD4B /* LeagueTable.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

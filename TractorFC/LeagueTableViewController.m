@@ -39,15 +39,20 @@
     [self.view addSubview:leagueTableWebView];
 }
 
+-(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
+    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
+        [[UIApplication sharedApplication] openURL:[inRequest URL]];
+        return NO;
+    }
+    
+    return YES;
+}
+
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     // Loading and injecting your JavaScript code into the webView, so you can actually use it
     // in the context of the web page that was loaded...
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"LeagueTable" ofType:@"js"];
-    NSString *jsCode = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    [webView stringByEvaluatingJavaScriptFromString:jsCode];
-    
 }
 
 - (void)viewDidUnload

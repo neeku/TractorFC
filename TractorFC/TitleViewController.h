@@ -11,7 +11,7 @@
 #import "NATitleBar.h"
 #import "DetailView.h"
 
-@interface TitleViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,RssParserDelegate>
+@interface TitleViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,RssParserDelegate, UINavigationControllerDelegate>
 {
     NSMutableDictionary     *imagesCache;
 }

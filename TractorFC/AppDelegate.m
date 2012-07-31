@@ -25,7 +25,7 @@
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];
     UIViewController *viewController0 = [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
-    UIViewController *viewController1 = [[TitleViewController alloc] initWithNibName:@"TitleViewController" bundle:nil];
+    UINavigationController *viewController1 = [[TitleViewController alloc] initWithNibName:@"TitleViewController" bundle:nil];
     UIViewController *viewController2 = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" bundle:nil];
     UIViewController *viewController3 = [[LeagueTableViewController alloc] initWithNibName:@"LeagueTableViewController" bundle:nil];
     
