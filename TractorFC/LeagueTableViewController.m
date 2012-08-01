@@ -39,6 +39,7 @@
     [self.view addSubview:leagueTableWebView];
 }
 
+//__nshamekhi__ This method is supposed to disable hyperlinks in the web view, but using it in many different ways didn't make any changes. To avoid hyperlinks redirecting to other pages, userInteraction is disabled on this view for now ^ !!
 -(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
     if ( inType == UIWebViewNavigationTypeLinkClicked ) {
         [[UIApplication sharedApplication] openURL:[inRequest URL]];
