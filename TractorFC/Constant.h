@@ -16,31 +16,15 @@
 #define NO_CONNECTION_ALERT_VIEW_COLOR colorWithRed:0.129 green:0.129 blue:0.129 alpha:0.8
 #define NO_CONNECTION_ALERT_VIEW_STROKE_COLOR colorWithRed:0.9 green:0.001 blue:0.001 alpha:0.5
 
-#define ABOUT_APP_TEXT @""
 
-
-
-// The frame  of header view equal nib file
-#define HEADER_FRAME  CGRectMake(0, 0, 320, 44)
 
 // The frame of title view
 #define TITLE_Frame  CGRectMake(10, 80, 300, 25)
 
 
 // if the height of header (HEADER_FRAME)changed, this value will change.
-#define Y_ORIGIN_MAIN  44
+#define Y_ORIGIN_MAIN  0
 
-//Portrait Width
-#define P_WIDTH   320 
-
-//Portrait Height
-#define P_HEIGHT  480 
-
-//Landscape Width
-#define L_WIDTH  480
-
-//Landscape Height
-#define L_HEIGHT 320  
 
 // Title label frame in tableview cell
 #define TITLE_LABEL_FRAME  CGRectMake(10.0, 5.0, 215.0, 20.0)

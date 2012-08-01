@@ -3,7 +3,7 @@
 //  Key Chain
 //
 //  Created by Jonah on 11-05-10.
-//  Copyright 2011 __TGBS__. All rights reserved.
+//  Copyright 2011 . All rights reserved.
 //
 
 #import "ProAlertView.h"

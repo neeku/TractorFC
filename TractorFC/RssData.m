@@ -2,7 +2,7 @@
 //  RssData.m
 //
 //  Created by Neeku Shamekhi on 1/4/12.
-//  Copyright 2012 __TGBS__. All rights reserved.
+//  Copyright 2012 . All rights reserved.
 //
 
 #import "RssData.h"

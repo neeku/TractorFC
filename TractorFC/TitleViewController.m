@@ -14,7 +14,7 @@
 #import "FarsiNumerals.h"
 #import "AppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
-#import "DetailView.h"
+#import "DetailViewController.h"
 
 @interface TitleViewController ()
     
@@ -32,7 +32,7 @@
 @synthesize selectedCategory;
 @synthesize rssParser;
 @synthesize activityIndicator;
-@synthesize titleView;
+//@synthesize titleView;
 @synthesize parseFinished;
 
 
@@ -52,23 +52,23 @@
 
     NSLog(@"parse:,%@", parseFinished);
     [super viewDidLoad];
-    titleView = [[NATitleBar alloc]initWithFrame:HEADER_FRAME];
-    titleView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:titleView];
-    
-    [titleView.back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-    [titleView.home addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
-    
+//    titleView = [[NATitleBar alloc]initWithFrame:HEADER_FRAME];
+//    titleView.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:titleView];
+//    
+//    [titleView.back addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+//    [titleView.home addTarget:self action:@selector(home) forControlEvents:UIControlEventTouchUpInside];
+//    
     
     //_nshamekhi_ Gets the selected category name from the CategoryPlist.plist file and sets it to the title for the view.
-    NSString *file = [[NSBundle  mainBundle] pathForResource:@"CategoryPlist"
-                                                      ofType:@"plist"];
-    NSDictionary *item = [[NSDictionary alloc]initWithContentsOfFile:file];
-    NSArray *array = [item objectForKey:@"Root"];
-    NSString *categoryName = [NSString stringWithString:
-                  [[array objectAtIndex:[selectedCategory intValue]]objectForKey:@"Name"]];
-    globalCategoryName = [categoryName copy];
-    titleView.label.text = categoryName;
+//    NSString *file = [[NSBundle  mainBundle] pathForResource:@"CategoryPlist"
+//                                                      ofType:@"plist"];
+//    NSDictionary *item = [[NSDictionary alloc]initWithContentsOfFile:file];
+//    NSArray *array = [item objectForKey:@"Root"];
+//    NSString *categoryName = [NSString stringWithString:
+//                  [[array objectAtIndex:[selectedCategory intValue]]objectForKey:@"Name"]];
+ //   globalCategoryName = [categoryName copy];
+//    titleView.label.text = categoryName;
     
     // Do any additional setup after loading the view from its nib.
     rssParser = [[RssParser alloc] init];
@@ -241,9 +241,9 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DetailView *detailViewController = [[DetailView alloc] initWithNibName:@"" bundle:nil];
-    [detailViewController setRssData:[[[self rssParser] rssItems] objectAtIndex:indexPath.row]];
-    [self.navigationController presentModalViewController:detailViewController animated:YES]; 
+    DetailViewController *detailViewControllerController = [[DetailViewController alloc] initWithNibName:@"" bundle:nil];
+    [detailViewControllerController setRssData:[[[self rssParser] rssItems] objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:detailViewControllerController animated:YES]; 
 	NSLog(@"%@", self.tabBarController);
 }
 

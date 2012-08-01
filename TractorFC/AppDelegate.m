@@ -12,7 +12,6 @@
 #import "PhotosViewController.h"
 #import "LeagueTableViewController.h"
 
-
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -24,13 +23,23 @@
     //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //self.window.backgroundColor = [UIColor whiteColor];
-    UIViewController *viewController0 = [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
-    UINavigationController *viewController1 = [[TitleViewController alloc] initWithNibName:@"TitleViewController" bundle:nil];
+    UIViewController *viewController0 = [[TitleViewController alloc] initWithNibName:@"TitleViewController" bundle:nil];
+    viewController0 = [[UINavigationController alloc] initWithRootViewController:viewController0];
+    UIViewController *viewController1 = [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
     UIViewController *viewController2 = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" bundle:nil];
     UIViewController *viewController3 = [[LeagueTableViewController alloc] initWithNibName:@"LeagueTableViewController" bundle:nil];
+
+    
+    NSArray *twoNavControllers = [[NSArray alloc]initWithObjects:viewController0, nil];
+    
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController0, viewController1, viewController2, viewController3,nil];
+    [self.tabBarController setViewControllers:twoNavControllers];
+    [self.window addSubview:self.tabBarController.view];
+    
+    
+  //  self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController0, viewController1, viewController2, viewController3, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

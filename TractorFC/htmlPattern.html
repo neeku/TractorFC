@@ -5,27 +5,23 @@
         <style type="text/css">
             body
             {
-                background-image:url(%@);
-                background-repeat:repeat-y;
-                background-size: contain;
-                
+                #scale-down
+                {
+                    width: 300px;
+                }
             }
             </style>
-        <body>
+        <body>            
             
-            <!-- these </br>s are for starting text content from below of header view -->
-            </br></br>
-            
-            
-            <div align=center style="margin-top:80px">
+            <div align=center style="margin-top:40px">
                 
-                <img src="%@" align=center max-width=10  border=0.0 alt="" height=device-height width=device-width/>
+                <img id="scale-down" src="%@" align=center  border=0.0 alt="" height=device-height width=device-width/>
                 
             </div>
             <div max-width=800>
-                <h3 align="center" dir="rtl" style= "color:#437C49; margin-left:10px;margin-right:10px;margin-top:5px; line-height:23px;">%@</h3>
+                <h3 align="center" dir="rtl" style= "color:black; margin-left:10px;margin-right:10px;margin-top:5px; line-height:23px;">%@</h3>
                 
-                <h4 color="white" align="justify" dir="rtl" style= "color:gray; margin-left:10px;margin-right:10px; margin-top:5px; line-height:23px;font-weight:normal;">%@</h4>
+                <h4 color="white" align="justify" dir="rtl" style= "color:black; margin-left:10px;margin-right:10px; margin-top:5px; line-height:23px;font-weight:normal;">%@</h4>
                 
             </div>
         </body>

@@ -2,7 +2,7 @@
 //  RssParser.m
 //
 //  Created by Neeku Shamekhi on 1/4/12.
-//  Copyright 2012 __TGBS__. All rights reserved.
+//  Copyright 2012 . All rights reserved.
 //
 
 #import "RssParser.h"
@@ -10,8 +10,6 @@
 #import "FarsiNumerals.h"
 #import "NSString_StripHTML.h"
 #import "TitleViewController.h"
-//#import "CategoryData.h"
-
 
 @implementation RssParser
 
@@ -170,14 +168,14 @@
 	}
 }
 
+
 - (void)parser:(NSXMLParser *)parser foundCDATA:(NSData *)CDATABlock{
     
     //_nshamekhi_ Grabs the whole content in CDATABlock. 
     NSMutableString *descriptionTagContent = [[NSMutableString alloc] initWithData:CDATABlock encoding:NSUTF8StringEncoding];
     
     //_nshamekhi_ Checks the tags to see if there are any images for the article, if so, sets a range with start and end index and grabs the string in between which is the image URL for the corresponding news item.
-
-    if ([descriptionTagContent rangeOfString:@"img class=\"caption\" src="].location == NSNotFound) 
+    if ([descriptionTagContent rangeOfString:@"img"].location == NSNotFound) 
     {
         
         NSLog(@"no images");   
@@ -187,10 +185,14 @@
         NSRange    startIndex = [descriptionTagContent rangeOfString: @"http://"];
         imageURL = [descriptionTagContent substringFromIndex:startIndex.location];
     
+
         NSRange    endIndex   = [imageURL rangeOfString: @"\""];
         imageURL = [imageURL substringToIndex:endIndex.location];
     
-    
+        //_nsamekhi_ In some URLs there's a blank space in file naming which causes the table view not display the image. Replacing it with its corresponding character "%20" fixes the issue.
+        imageURL = [imageURL stringByReplacingOccurrencesOfString:@" "
+                                             withString:@"%20"];
+        
         //strat downloading image
         self.currentItem.mediaUrl = [NSString stringWithString:imageURL];
         NSArray *argArray = [NSArray arrayWithObjects:self.currentItem,
@@ -247,8 +249,6 @@
     
     RssData* data;
     data=(RssData *)[argumantArray objectAtIndex:0];
-
-    NSLog(@"beforeloadimage");
     
     NSData* imageData;
     

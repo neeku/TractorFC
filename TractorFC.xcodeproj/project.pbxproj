@@ -39,17 +39,13 @@
 		29FA077915C51A4C009A9513 /* TractorFC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29FA077715C51A4C009A9513 /* TractorFC.xcdatamodeld */; };
 		29FA078B15C51AC9009A9513 /* RssData.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA078815C51AC9009A9513 /* RssData.m */; };
 		29FA078C15C51AC9009A9513 /* RssParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA078A15C51AC9009A9513 /* RssParser.m */; };
-		29FA079015C51AD9009A9513 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA078E15C51AD9009A9513 /* ModalViewController.m */; };
-		29FA079115C51AD9009A9513 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FA078F15C51AD9009A9513 /* ModalViewController.xib */; };
 		29FA079415C51AE9009A9513 /* ProAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA079315C51AE9009A9513 /* ProAlertView.m */; };
 		29FA079715C51AFF009A9513 /* UIWebView+Clean.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA079615C51AFF009A9513 /* UIWebView+Clean.m */; };
 		29FA079D15C51D24009A9513 /* FarsiNumerals.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA079C15C51D24009A9513 /* FarsiNumerals.m */; };
 		29FA07A115C51F0F009A9513 /* NSString_StripHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07A015C51F0F009A9513 /* NSString_StripHTML.m */; };
 		29FA07A515C51F20009A9513 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07A315C51F20009A9513 /* TitleViewController.m */; };
 		29FA07A615C51F20009A9513 /* TitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07A415C51F20009A9513 /* TitleViewController.xib */; };
-		29FA07A915C51F29009A9513 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07A815C51F29009A9513 /* DetailView.m */; };
-		29FA07AE15C51F4E009A9513 /* NATitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07AC15C51F4E009A9513 /* NATitleBar.m */; };
-		29FA07AF15C51F4E009A9513 /* NATitleBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07AD15C51F4E009A9513 /* NATitleBar.xib */; };
+		29FA07A915C51F29009A9513 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA07A815C51F29009A9513 /* DetailViewController.m */; };
 		29FA07B315C51F74009A9513 /* CategoryPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07B015C51F74009A9513 /* CategoryPlist.plist */; };
 		29FA07B415C51F74009A9513 /* htmlPattern.html in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07B115C51F74009A9513 /* htmlPattern.html */; };
 		29FA07B515C51F74009A9513 /* Intro.txt in Resources */ = {isa = PBXBuildFile; fileRef = 29FA07B215C51F74009A9513 /* Intro.txt */; };
@@ -100,9 +96,6 @@
 		29FA078815C51AC9009A9513 /* RssData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssData.m; sourceTree = "<group>"; };
 		29FA078915C51AC9009A9513 /* RssParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RssParser.h; sourceTree = "<group>"; };
 		29FA078A15C51AC9009A9513 /* RssParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssParser.m; sourceTree = "<group>"; };
-		29FA078D15C51AD9009A9513 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
-		29FA078E15C51AD9009A9513 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		29FA078F15C51AD9009A9513 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 		29FA079215C51AE9009A9513 /* ProAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProAlertView.h; sourceTree = "<group>"; };
 		29FA079315C51AE9009A9513 /* ProAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProAlertView.m; sourceTree = "<group>"; };
 		29FA079515C51AFF009A9513 /* UIWebView+Clean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Clean.h"; sourceTree = "<group>"; };
@@ -114,11 +107,8 @@
 		29FA07A215C51F20009A9513 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		29FA07A315C51F20009A9513 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
 		29FA07A415C51F20009A9513 /* TitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleViewController.xib; sourceTree = "<group>"; };
-		29FA07A715C51F29009A9513 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
-		29FA07A815C51F29009A9513 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
-		29FA07AB15C51F4E009A9513 /* NATitleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATitleBar.h; sourceTree = "<group>"; };
-		29FA07AC15C51F4E009A9513 /* NATitleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATitleBar.m; sourceTree = "<group>"; };
-		29FA07AD15C51F4E009A9513 /* NATitleBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NATitleBar.xib; sourceTree = "<group>"; };
+		29FA07A715C51F29009A9513 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		29FA07A815C51F29009A9513 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		29FA07B015C51F74009A9513 /* CategoryPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategoryPlist.plist; sourceTree = "<group>"; };
 		29FA07B115C51F74009A9513 /* htmlPattern.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = htmlPattern.html; sourceTree = "<group>"; };
 		29FA07B215C51F74009A9513 /* Intro.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Intro.txt; sourceTree = "<group>"; };
@@ -215,24 +205,18 @@
 		29FA076B15C51A4C009A9513 /* TractorFC */ = {
 			isa = PBXGroup;
 			children = (
-				293EE8C715C541B40099CE73 /* LeagueTable VC */,
-				29FA07BD15C520F0009A9513 /* Photos VC */,
-				29FA07B715C520BE009A9513 /* Intro VC */,
-				29FA07B015C51F74009A9513 /* CategoryPlist.plist */,
-				29FA07B115C51F74009A9513 /* htmlPattern.html */,
-				29FA07B215C51F74009A9513 /* Intro.txt */,
-				29FA07B615C51F89009A9513 /* Constant.h */,
-				29FA07AA15C51F3C009A9513 /* Header View */,
-				29FA078615C51AAE009A9513 /* Detail VC */,
-				29FA078515C51AA4009A9513 /* Title VC */,
-				29FA078415C51A9A009A9513 /* Farsi Numerals */,
-				29FA078315C51A94009A9513 /* Memory Leak */,
-				29FA078215C51A88009A9513 /* About App */,
-				29FA078115C51A80009A9513 /* RSS */,
-				29FA078015C51A74009A9513 /* Pro Alert View */,
-				29FA077F15C51A69009A9513 /* HTML Stripper */,
 				29FA077415C51A4C009A9513 /* AppDelegate.h */,
 				29FA077515C51A4C009A9513 /* AppDelegate.m */,
+				29FA078515C51AA4009A9513 /* News Title VC */,
+				29FA078615C51AAE009A9513 /* News Detail VC */,
+				29FA07B715C520BE009A9513 /* Intro VC */,
+				29FA07BD15C520F0009A9513 /* Photos VC */,
+				293EE8C715C541B40099CE73 /* LeagueTable VC */,
+				29FA078115C51A80009A9513 /* RSS */,
+				29FA078415C51A9A009A9513 /* Farsi Numerals */,
+				29FA078315C51A94009A9513 /* WebView Memory Leak */,
+				29FA078015C51A74009A9513 /* Pro Alert View */,
+				29FA077F15C51A69009A9513 /* HTML Stripper */,
 				29FA077715C51A4C009A9513 /* TractorFC.xcdatamodeld */,
 				29FA07C315C52354009A9513 /* MainWindow.xib */,
 				29FA076C15C51A4C009A9513 /* Supporting Files */,
@@ -244,6 +228,10 @@
 			isa = PBXGroup;
 			children = (
 				293EE8D515C54D330099CE73 /* Images */,
+				29FA07B015C51F74009A9513 /* CategoryPlist.plist */,
+				29FA07B115C51F74009A9513 /* htmlPattern.html */,
+				29FA07B215C51F74009A9513 /* Intro.txt */,
+				29FA07B615C51F89009A9513 /* Constant.h */,
 				29FA076D15C51A4C009A9513 /* TractorFC-Info.plist */,
 				29FA076E15C51A4C009A9513 /* InfoPlist.strings */,
 				29FA077115C51A4C009A9513 /* main.m */,
@@ -281,23 +269,13 @@
 			name = RSS;
 			sourceTree = "<group>";
 		};
-		29FA078215C51A88009A9513 /* About App */ = {
-			isa = PBXGroup;
-			children = (
-				29FA078D15C51AD9009A9513 /* ModalViewController.h */,
-				29FA078E15C51AD9009A9513 /* ModalViewController.m */,
-				29FA078F15C51AD9009A9513 /* ModalViewController.xib */,
-			);
-			name = "About App";
-			sourceTree = "<group>";
-		};
-		29FA078315C51A94009A9513 /* Memory Leak */ = {
+		29FA078315C51A94009A9513 /* WebView Memory Leak */ = {
 			isa = PBXGroup;
 			children = (
 				29FA079515C51AFF009A9513 /* UIWebView+Clean.h */,
 				29FA079615C51AFF009A9513 /* UIWebView+Clean.m */,
 			);
-			name = "Memory Leak";
+			name = "WebView Memory Leak";
 			sourceTree = "<group>";
 		};
 		29FA078415C51A9A009A9513 /* Farsi Numerals */ = {
@@ -309,33 +287,23 @@
 			name = "Farsi Numerals";
 			sourceTree = "<group>";
 		};
-		29FA078515C51AA4009A9513 /* Title VC */ = {
+		29FA078515C51AA4009A9513 /* News Title VC */ = {
 			isa = PBXGroup;
 			children = (
 				29FA07A215C51F20009A9513 /* TitleViewController.h */,
 				29FA07A315C51F20009A9513 /* TitleViewController.m */,
 				29FA07A415C51F20009A9513 /* TitleViewController.xib */,
 			);
-			name = "Title VC";
+			name = "News Title VC";
 			sourceTree = "<group>";
 		};
-		29FA078615C51AAE009A9513 /* Detail VC */ = {
+		29FA078615C51AAE009A9513 /* News Detail VC */ = {
 			isa = PBXGroup;
 			children = (
-				29FA07A715C51F29009A9513 /* DetailView.h */,
-				29FA07A815C51F29009A9513 /* DetailView.m */,
+				29FA07A715C51F29009A9513 /* DetailViewController.h */,
+				29FA07A815C51F29009A9513 /* DetailViewController.m */,
 			);
-			name = "Detail VC";
-			sourceTree = "<group>";
-		};
-		29FA07AA15C51F3C009A9513 /* Header View */ = {
-			isa = PBXGroup;
-			children = (
-				29FA07AB15C51F4E009A9513 /* NATitleBar.h */,
-				29FA07AC15C51F4E009A9513 /* NATitleBar.m */,
-				29FA07AD15C51F4E009A9513 /* NATitleBar.xib */,
-			);
-			name = "Header View";
+			name = "News Detail VC";
 			sourceTree = "<group>";
 		};
 		29FA07B715C520BE009A9513 /* Intro VC */ = {
@@ -409,9 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FA077015C51A4C009A9513 /* InfoPlist.strings in Resources */,
-				29FA079115C51AD9009A9513 /* ModalViewController.xib in Resources */,
 				29FA07A615C51F20009A9513 /* TitleViewController.xib in Resources */,
-				29FA07AF15C51F4E009A9513 /* NATitleBar.xib in Resources */,
 				29FA07B315C51F74009A9513 /* CategoryPlist.plist in Resources */,
 				29FA07B415C51F74009A9513 /* htmlPattern.html in Resources */,
 				29FA07B515C51F74009A9513 /* Intro.txt in Resources */,
@@ -454,14 +420,12 @@
 				29FA077915C51A4C009A9513 /* TractorFC.xcdatamodeld in Sources */,
 				29FA078B15C51AC9009A9513 /* RssData.m in Sources */,
 				29FA078C15C51AC9009A9513 /* RssParser.m in Sources */,
-				29FA079015C51AD9009A9513 /* ModalViewController.m in Sources */,
 				29FA079415C51AE9009A9513 /* ProAlertView.m in Sources */,
 				29FA079715C51AFF009A9513 /* UIWebView+Clean.m in Sources */,
 				29FA079D15C51D24009A9513 /* FarsiNumerals.m in Sources */,
 				29FA07A115C51F0F009A9513 /* NSString_StripHTML.m in Sources */,
 				29FA07A515C51F20009A9513 /* TitleViewController.m in Sources */,
-				29FA07A915C51F29009A9513 /* DetailView.m in Sources */,
-				29FA07AE15C51F4E009A9513 /* NATitleBar.m in Sources */,
+				29FA07A915C51F29009A9513 /* DetailViewController.m in Sources */,
 				29FA07BB15C520C7009A9513 /* IntroViewController.m in Sources */,
 				29FA07C115C520F8009A9513 /* PhotosViewController.m in Sources */,
 				293EE8D215C543B80099CE73 /* LeagueTableViewController.m in Sources */,

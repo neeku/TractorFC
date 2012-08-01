@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-NSString *globalCategoryName;
+//NSString *globalCategoryName;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate, UINavigationControllerDelegate>
 
