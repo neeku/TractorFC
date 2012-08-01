@@ -1,0 +1,59 @@
+### TractorFC ###
+
+================================================================================
+DESCRIPTION:
+
+TractorFC is a tab-based iPhone application, including four tabs:
+1. News
+2. Intro
+3. Photos
+4. League Table
+
+The tabs are handled in the AppDelegate file, in addition to the navigation controller that controls navigation for News Tab. The URL is added in a PLIST file, and contains a feed link from a website which is parsed as XML in RSS Parser.
+
+1. News tab includes a parent view controller called (TitleViewController) in which the news header, intro text, and the image is displayed in customized table view cells. 
+
+Each table view cell contains four subviews: a. news header, b. intro text, c. image d. customized divider as separator line for cells.
+
+The image placeholder uses layer property from QuartzCore to add a border and corner radius.
+A default image will be displayed if there are no photos available for an article.
+
+
+The child view controller (DetailViewController) contains a web view that displays the full description of news along with the title and image. The html/css styles are set in htmlPattern.html file. The web view supports pinch in/out, double tap for zooming in and out.
+
+2. IntroViewController displays an introduction to the team and its fan club. The text is included in a text file called Intro.txt, and what this VC does, is reading the content from the file and display it in a text view.
+
+The content is from Wikipedia.
+
+3. PhotosViewController contains 7 buttons that display 7 static images from the application bundle.
+This is just a very basic and simple way of displaying images, and in case we want to submit the app to a public store, this part needs to be improved.
+
+4. LeagueTableViewController is a web view that displays the table from an iframe URL. 
+
+================================================================================
+Other Resources:
+
+* RssData/RssParser (.h, .m)
+  Does all parsing process for the XML.
+  Images are stored in an array, and image display is done asynchronously to avoid scrolling lag in table view.
+
+  A lot of optimization is done on the parses, and detailed notes can be found as comments in the files.
+
+* FarsiNumerals (.h, .m)
+  Strings with Persian text can be passed to this category to have the numerals displayed in the correct Persian script (not English one).
+
+* WebView Memory Leak (UIWebView+Clean .h, .m)
+  If the web view contains a huge amount of contents, it causes a memory leak and makes the app crash. Using this class, the issue is fixed.
+
+* Pro Alert View (.h, .m)
+  This is used to customize the alert views.
+
+* HTML Stripper (NSString_StripHTML .h, .m)
+  strings from CData Block are passed to HTML Stripper to strip any extra/unwanted HTML tag.
+
+*** Constant.h includes all sizes for different frames and subviews, color codes, font styles, alert messages, etc. which makes manipulating the values much easier.
+
+*** Tab bar item images do not have a @2x version for retina display. They can be added later.
+
+================================================================================
+Neeku Shamekhi - Aug 1, 2012
