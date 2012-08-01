@@ -27,6 +27,7 @@ The content is from Wikipedia.
 
 3. PhotosViewController contains 7 buttons that display 7 static images from the application bundle.
 This is just a very basic and simple way of displaying images, and in case we want to submit the app to a public store, this part needs to be improved.
+It uses an single IBAction to controll the action for all seven (or more) buttons.
 
 4. LeagueTableViewController is a web view that displays the table from an iframe URL. 
 
